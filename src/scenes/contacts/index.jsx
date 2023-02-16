@@ -11,43 +11,43 @@ const Contacts = () => {
 
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "registrarId", headerName: "Registrar ID" },
+    // { field: "registrarId", headerName: "Registrar ID" },
     {
       field: "name",
-      headerName: "Name",
+      headerName: "Имя",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
       field: "age",
-      headerName: "Age",
+      headerName: "Возраст",
       type: "number",
       headerAlign: "left",
       align: "left",
     },
     {
       field: "phone",
-      headerName: "Phone Number",
+      headerName: "Номер телефона",
       flex: 1,
     },
     {
       field: "email",
-      headerName: "Email",
+      headerName: "Почта",
       flex: 1,
     },
     {
-      field: "address",
-      headerName: "Address",
+      field: "visits",
+      headerName: "Посещения",
       flex: 1,
     },
     {
-      field: "city",
-      headerName: "City",
+      field: "referal",
+      headerName: "Реферал",
       flex: 1,
     },
     {
-      field: "zipCode",
-      headerName: "Zip Code",
+      field: "sale",
+      headerName: "Скидка",
       flex: 1,
     },
   ];
@@ -55,8 +55,8 @@ const Contacts = () => {
   return (
     <Box m="20px">
       <Header
-        title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
+        title="Клиенты"
+        subtitle="База клиентов"
       />
       <Box
         m="40px 0 0 0"
